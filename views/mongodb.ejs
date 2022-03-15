@@ -4,23 +4,23 @@
     <title>MONGODB PAGE</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
-<body bgcolor="#ffb6c1">
-<h4 align="left">Web Systems:Exercise N1</h4>
-<h1 align="center">STUDENTS</h1>
+<body bgcolor="White">
+<h4 align="left">Exercise N1</h4>
+<h1 align="center">LATEST STUDENTS</h1>
 <div class="container">
-    <h3 align="center">Database</h3>
+    <h3 align="center">Following results are fetched from Database</h3>
     <table style="width:100%" border="3px" >
-        <tr bgcolor="#f5f5f5">
+        <tr bgcolor="#ffc0cb">
             <th>Name</th>
             <th>Age</th>
-            <th>Grade</th>
+            <th>Course</th>
             <th>Year</th>
         </tr>
         <% results.forEach(function(r) { %>
-            <tr bgcolor="#f5f5f5">
+            <tr bgcolor="#ffc0cb">
                 <td align="center"><%= r.name %></td>
                 <td align="center"><%= r.age %></td>
-                <td align="center"><%= r.grade %></td>
+                <td align="center"><%= r.course %></td>
                 <td align="center"><%= r.year %></td>
             </tr>
         <% }); %>
